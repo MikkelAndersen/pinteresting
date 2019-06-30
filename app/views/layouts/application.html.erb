@@ -10,8 +10,9 @@
   </head>
 
   <body>
-    <%= link_to "Hjem", root_path %>
-    <%= link_to "Om os", omos_path %>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
